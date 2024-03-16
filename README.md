@@ -1,6 +1,10 @@
 # cpp-week2
 숫자 야구 프로젝트
 
+[사용된 문법 정리 링크](https://github.com/yuhano/cpp-week2/blob/main/readme/syntax.md)
+에서 각 버전 마다 사용된 문법을 정리하였습니다.
+
+
 ## 숫자 야구 규칙
 1. 사용자로 부터 3개의 숫자를 입력 받는다. 
 

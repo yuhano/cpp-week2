@@ -3,15 +3,15 @@
 
 std::string inputGuess();
 int guessAnswer(std::string answer);
+std::string generateNumber();
 
 void initGame(){
-    std::string input_answer;
-    std::cout << "Enter a answer: ";
-    std::cin >> input_answer;
+    std::string answer = generateNumber();
+    std::cout <<"Answer is "<< answer<<std::endl;
 
     int isPlaying = 1;
     while(isPlaying){
-        isPlaying = guessAnswer(input_answer);
+        isPlaying = guessAnswer(answer);
     }
 }
 

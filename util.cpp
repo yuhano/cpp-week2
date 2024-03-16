@@ -18,6 +18,14 @@ std::string generateNumber(){
     char c[4];
     for (int i = 0; i < 3; i++){
         c[i] = (int)rand()%10 +'0';
+
+        // 중복 검사 로직
+        for (int j = 0; j < i; j ++){
+            if(c[i] == c[j]){
+                i --;
+            }
+
+        }
     }
     std::string str(c);
 

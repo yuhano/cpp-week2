@@ -7,11 +7,19 @@ std::string generateNumber();
 
 void initGame(){
     std::string answer = generateNumber();
-    std::cout <<"Answer is "<< answer<<std::endl;
 
     int isPlaying = 1;
+    int playCount = 0;
+    
     while(isPlaying){
+        std::cout << 5-playCount << " chances left."<< std::endl;
         isPlaying = guessAnswer(answer);
+        playCount += isPlaying;
+
+        if (playCount == 5){
+            isPlaying = 0;
+            std::cout << "You lose!";
+        }
     }
 }
 
